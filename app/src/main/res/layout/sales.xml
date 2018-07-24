@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Select Product"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/productSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary"
+                android:entries="@array/product"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Select SKU"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/skuSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Enter Quantity"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/qty"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="9dp"
+                android:paddingLeft="6dp"
+                android:inputType="number"
+                android:background="@color/colorPrimary" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Sale Type"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/saleType"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Enter Customer Name"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="9dp"
+                android:paddingLeft="6dp"
+                android:inputType="text"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Enter Customer Phone Number"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="9dp"
+                android:paddingLeft="6dp"
+                android:inputType="number"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.2"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/cameraImg"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/cameraicon"
+                    android:layout_marginTop="19dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="100dp"
+                    android:layout_weight="1"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    />
+                <ImageView
+                    android:id="@+id/videoImg"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/video_camera"
+                    android:layout_marginTop="19dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="100dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/addSale"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/buttonColor">
+
+        <TextView
+            android:id="@+id/addcustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SUBMIT"
+            android:textColor="#FFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

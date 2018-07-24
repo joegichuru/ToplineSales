@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/outlet"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/outlet"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/brand"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/brand"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/sku"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sku"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/qty_delivered"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="@string/delivery_date"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="9dp"
+                android:background="@color/colorPrimary" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/buttonColor">
+
+        <TextView
+            android:id="@+id/addcustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SUBMIT"
+            android:textColor="#FFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
